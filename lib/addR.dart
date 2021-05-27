@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smooth_star_rating/smooth_star_rating.dart';
 
 
 class AddR extends StatefulWidget {
@@ -7,6 +8,7 @@ class AddR extends StatefulWidget {
 }
 
 class _AddRState extends State<AddR> {
+  var rating = 0.0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,6 +52,7 @@ class _AddRState extends State<AddR> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Cleanliness",
                       style: TextStyle(
@@ -57,37 +60,77 @@ class _AddRState extends State<AddR> {
                         //color: Colors.grey,
                       ),
                         ),
-                    Row(
-                      children: [
-                        Container(
-                          height: 30,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage(
-                            "assets/s.png",
-                            
 
-                        )
-                      )
-                    ),
-                        )
-                      ],
-                    )
 
-                  ],
+
+
+
+
+                SmoothStarRating(
+                  rating: rating,
+                  color: Colors.deepPurple,
+                  borderColor: Colors.deepPurple,
+                  isReadOnly: false,
+                  size: 30,
+                  filledIconData: Icons.star,
+                  halfFilledIconData: Icons.star_half,
+                  defaultIconData: Icons.star_border,
+                  starCount: 5,
+                  allowHalfRating: false,
+                  spacing: 2.0,
+                  onRated: (value) {
+                    print("rating value -> $value");
+                    // print("rating value dd -> ${value.truncate()}");
+                  },
+
+                ),
+
+
+
+
+
+]
                 ),
               ),
 
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Service",
                       style: TextStyle(
                         fontSize: 15,
                         //color: Colors.grey,
                       ),
-                    )
+                    ),
+
+                    SmoothStarRating(
+                      rating: rating,
+                      color: Colors.deepPurple,
+                      borderColor: Colors.deepPurple,
+                      isReadOnly: false,
+                      size: 30,
+                      filledIconData: Icons.star,
+                      halfFilledIconData: Icons.star_half,
+                      defaultIconData: Icons.star_border,
+                      starCount: 5,
+                      allowHalfRating: false,
+                      spacing: 2.0,
+                      onRated: (value) {
+                        print("rating value -> $value");
+                        // print("rating value dd -> ${value.truncate()}");
+                      },
+
+                    ),
+
+
+
+
+
+
+
+
                   ],
                 ),
               ),
@@ -97,13 +140,33 @@ class _AddRState extends State<AddR> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Cuisine",
                       style: TextStyle(
                         fontSize: 15,
                         //color: Colors.grey,
                       ),
-                    )
+                    ),
+                    SmoothStarRating(
+                      color: Colors.deepPurple,
+                      borderColor: Colors.deepPurple,
+                      rating: rating,
+                      isReadOnly: false,
+                      size: 30,
+                      filledIconData: Icons.star,
+                      halfFilledIconData: Icons.star_half,
+                      defaultIconData: Icons.star_border,
+                      starCount: 5,
+                      allowHalfRating: false,
+                      spacing: 2.0,
+                      onRated: (value) {
+                        print("rating value -> $value");
+                        // print("rating value dd -> ${value.truncate()}");
+                      },
+
+                    ),
+
                   ],
                 ),
               ),
@@ -111,13 +174,34 @@ class _AddRState extends State<AddR> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Value",
                       style: TextStyle(
                         fontSize: 15,
                         //color: Colors.grey,
                       ),
-                    )
+                    ),
+                    SmoothStarRating(
+
+borderColor: Colors.deepPurple,
+                      color: Colors.deepPurple,
+                      rating: rating,
+                      isReadOnly: false,
+                      size: 30,
+                      filledIconData: Icons.star,
+                      halfFilledIconData: Icons.star_half,
+                      defaultIconData: Icons.star_border,
+                      starCount: 5,
+                      allowHalfRating: false,
+                      spacing: 2.0,
+                      onRated: (value) {
+                        print("rating value -> $value");
+                        // print("rating value dd -> ${value.truncate()}");
+                      },
+
+                    ),
+
                   ],
                 ),
               ),
@@ -126,13 +210,61 @@ class _AddRState extends State<AddR> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text("Select images",
                       style: TextStyle(
                         fontSize: 18,
                         //color: Colors.grey,
                       ),
-                    )
+                    ),
+
+
+
+                    Container(
+                      //padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
+                      child:
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Align(
+
+                          alignment: Alignment.topRight,
+                          child: RaisedButton(
+                             color: Colors.white,
+                              shape: RoundedRectangleBorder(
+                             side: BorderSide(color: Colors.deepPurple, width: 2),
+                                borderRadius: BorderRadius.circular(19),
+
+                              ),
+                              child: Text("Browse"),
+                              // shape: CircleBorder(),
+
+
+
+
+                              onPressed: (){}
+
+
+
+
+                          ),
+                        ),
+                      ),
+
+                    ),
+
+
+
+
+
+
+
+
+
+
+
+
+
                   ],
                 ),
               ),

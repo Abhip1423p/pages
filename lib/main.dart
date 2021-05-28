@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:pages/location.dart';
 
 import 'addR.dart';
+import 'deleteAcc.dart';
 import 'feedBack.dart';
 import 'notification.dart';
 
@@ -29,10 +30,9 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:   FeddB(),
-      //Location()
-      //AddR(),
-        //InboxB(),
+      home: //AddR()
+
+  delete(),
     );
   }
 }

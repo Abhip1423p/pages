@@ -222,7 +222,6 @@ borderColor: Colors.deepPurple,
 
 
                     Container(
-                      //padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
                       child:
                       Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -239,13 +238,7 @@ borderColor: Colors.deepPurple,
                               child: Text("Browse"),
                               // shape: CircleBorder(),
 
-
-
-
                               onPressed: (){}
-
-
-
 
                           ),
                         ),

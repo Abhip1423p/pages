@@ -6,6 +6,7 @@ import 'package:pages/location.dart';
 import 'addR.dart';
 import 'deleteAcc.dart';
 import 'feedBack.dart';
+import 'filter.dart';
 import 'notification.dart';
 
 void main() {
@@ -30,9 +31,10 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: //AddR()
+      home: filter()
+      //AddR()
 
-  delete(),
+  //delete(),
     );
   }
 }

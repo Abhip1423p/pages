@@ -1,13 +1,16 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:pages/location.dart';
 
+import 'package:pages/reward/routes/routesGenerator.dart';
+
+import 'package:pages/reward/rewardMainPage.dart';
+import 'package:pages/reward/routes/route.dart';
 import 'addR.dart';
 import 'deleteAcc.dart';
 import 'feedBack.dart';
 import 'filter.dart';
-import 'notification.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -31,7 +34,21 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: filter()
+// to impliment nav
+
+
+    builder: (_, child)=> RewardA (
+
+      child: child,
+
+    ) ,
+
+ initialRoute: routePoints,
+   navigatorKey: navKey,
+     onGenerateRoute: RouteGenerator.generateRoute,
+
+
+
       //AddR()
 
   //delete(),

@@ -23,6 +23,9 @@ environment:
 dependencies:
   smooth_star_rating: ^1.1.1
   flutter_custom_clippers: ^1.1.2
+  flutter_html: ^0.8.2
+
+
   flutter:
     sdk: flutter
 

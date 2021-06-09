@@ -1,6 +1,9 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:pages/reward/membership/membershipStandard.dart';
+import 'package:pages/reward/membership/memebershipPremuim.dart';
+import 'package:pages/reward/membership/stdM.dart';
 
 import 'package:pages/reward/routes/routesGenerator.dart';
 
@@ -36,6 +39,9 @@ class MyApp extends StatelessWidget {
       ),
 // to impliment nav
 
+  //  home:
+     //MembershipPremuim()
+  // MembershipPlan(),
 
     builder: (_, child)=> RewardA (
 

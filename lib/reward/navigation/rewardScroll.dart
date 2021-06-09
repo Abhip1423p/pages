@@ -16,39 +16,42 @@ class _NavigationBarState extends State<NavigationBar> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          color: Color.fromRGBO(255, 205, 0, 1),
-          border: Border.all(
-            color: Colors.transparent,
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
+      child: Container(
+        decoration: BoxDecoration(
+            color: Color.fromRGBO(255, 205, 0, 1),
+            border: Border.all(
+              color: Colors.transparent,
 
-          ),
-          borderRadius: BorderRadius.all(Radius.circular(20))
-      ),
-      height: 40.0,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        //mainAxisSize: MainAxisSize.max,
-        children: [
-          NavigationItem(
-            selected: index == 0,
-            title: 'Points',
-            routeName: routePoints,
-            onHighlight: onHighlight,
-          ),
-          NavigationItem(
-            selected: index == 1,
-            title: 'Coin',
-            routeName: routeCoins,
-            onHighlight: onHighlight,
-          ),
-          NavigationItem(
-            selected: index == 2,
-            title: 'Badges',
-            routeName: routeBadges,
-            onHighlight: onHighlight,
-          ),
-        ],
+            ),
+            borderRadius: BorderRadius.all(Radius.circular(20))
+        ),
+        height: 40.0,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+          children: [
+            NavigationItem(
+              selected: index == 0,
+              title: 'Points',
+              routeName: routePoints,
+              onHighlight: onHighlight,
+            ),
+            NavigationItem(
+              selected: index == 1,
+              title: 'Coin',
+              routeName: routeCoins,
+              onHighlight: onHighlight,
+            ),
+            NavigationItem(
+              selected: index == 2,
+              title: 'Badges',
+              routeName: routeBadges,
+              onHighlight: onHighlight,
+            ),
+          ],
+        ),
       ),
     );
   }

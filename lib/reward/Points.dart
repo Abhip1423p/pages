@@ -18,8 +18,8 @@ class _PointsState extends State<Points> {
         child: Column
           (
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
+            Padding( padding: const EdgeInsets.fromLTRB(22, 0, 10, 22),
+
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

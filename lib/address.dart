@@ -33,7 +33,7 @@ class Address extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  height: 30,
+                  height: 40,
                   width: MediaQuery.of(context).size.width,
 
                   decoration: BoxDecoration(
@@ -42,8 +42,11 @@ class Address extends StatelessWidget {
                       color: Colors.grey,
                     )
                   ),
-                  child: Text(
-                    "Saved Address"
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      "Saved Address"
+                    ),
                   ),
                 ),
               ),
@@ -108,22 +111,23 @@ height: 30,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(15.0),
                           child: Text("Edit",
                             style: TextStyle(
-                              color: Color.fromRGBO(56, 12, 132, 1)
+                                color: Color.fromRGBO(56, 12, 132, 1)
                             ),
                           ),
                         ),
 
 
-                        Divider(
-                       height: 50,
+                        VerticalDivider(
+                          width: 2,
                           color: Colors.grey,
-                          thickness: 5,
+                          thickness: 0.5,
                         ),
+
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(15.0),
                           child: Text("Remove",
                             style: TextStyle(
                                 color: Color.fromRGBO(56, 12, 132, 1)
@@ -136,6 +140,7 @@ height: 30,
                 ),
               ),
 
+
 ////
 
 
@@ -144,7 +149,7 @@ height: 30,
                 child: Container(
                   child: Row(
                     children: [
-                      Icon(Icons.home,
+                      Icon(Icons.home_repair_service,
                         color: Colors.grey,
                       ),
                       SizedBox(
@@ -166,7 +171,7 @@ height: 30,
                         ),
                         child: Center(
                           child: Text(
-                              "Home"
+                              "office"
                           ),
                         ),
                       )
@@ -200,7 +205,7 @@ height: 30,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(15.0),
                           child: Text("Edit",
                             style: TextStyle(
                                 color: Color.fromRGBO(56, 12, 132, 1)
@@ -209,13 +214,14 @@ height: 30,
                         ),
 
 
-                        Divider(
-                          height: 50,
+                        VerticalDivider(
+                          width: 2,
                           color: Colors.grey,
-                          thickness: 5,
+                          thickness: 0.5,
                         ),
+
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(15.0),
                           child: Text("Remove",
                             style: TextStyle(
                                 color: Color.fromRGBO(56, 12, 132, 1)
@@ -240,7 +246,7 @@ height: 30,
                 child: Container(
                   child: Row(
                     children: [
-                      Icon(Icons.home,
+                      Icon(Icons.home_work_outlined,
                         color: Colors.grey,
                       ),
                       SizedBox(
@@ -262,7 +268,7 @@ height: 30,
                         ),
                         child: Center(
                           child: Text(
-                              "Home"
+                              "Other"
                           ),
                         ),
                       )
@@ -296,7 +302,7 @@ height: 30,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(15.0),
                           child: Text("Edit",
                             style: TextStyle(
                                 color: Color.fromRGBO(56, 12, 132, 1)
@@ -305,13 +311,14 @@ height: 30,
                         ),
 
 
-                        Divider(
-                          height: 50,
+                        VerticalDivider(
+                          width: 2,
                           color: Colors.grey,
-                          thickness: 5,
+                          thickness: 0.5,
                         ),
+
                         Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(15.0),
                           child: Text("Remove",
                             style: TextStyle(
                                 color: Color.fromRGBO(56, 12, 132, 1)
@@ -324,7 +331,9 @@ height: 30,
                 ),
               ),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
+                height: 60,
+               width: 250,
+               // padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
                 child:
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -335,7 +344,7 @@ height: 30,
                         borderRadius: BorderRadius.circular(19),
 
                       ),
-                      child: Text("\+ Add New Event",style: TextStyle(
+                      child: Text("\+Add New Address",style: TextStyle(
                         color: Color.fromRGBO(56, 12, 132, 1),
                       )),
                       // shape: CircleBorder(),

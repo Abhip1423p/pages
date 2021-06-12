@@ -123,7 +123,7 @@ height: 30,
                         VerticalDivider(
                           width: 2,
                           color: Colors.grey,
-                          thickness: 0.5,
+                          thickness: 1,
                         ),
 
                         Padding(
@@ -217,7 +217,7 @@ height: 30,
                         VerticalDivider(
                           width: 2,
                           color: Colors.grey,
-                          thickness: 0.5,
+                          thickness: 1,
                         ),
 
                         Padding(
@@ -314,7 +314,7 @@ height: 30,
                         VerticalDivider(
                           width: 2,
                           color: Colors.grey,
-                          thickness: 0.5,
+                          thickness: 1,
                         ),
 
                         Padding(

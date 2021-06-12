@@ -12,6 +12,7 @@ import 'package:pages/reward/routes/routesGenerator.dart';
 import 'package:pages/reward/rewardMainPage.dart';
 import 'package:pages/reward/routes/route.dart';
 import 'addR.dart';
+import 'address.dart';
 import 'deleteAcc.dart';
 import 'feedBack.dart';
 import 'filter.dart';
@@ -34,8 +35,8 @@ class MyApp extends StatelessWidget {
 // to impliment nav
 
 
-  home:
-  Reviews()
+  home:Address(),
+ // Reviews()
      //MembershipPremuim()
   // MembershipPlan(),
 

@@ -16,6 +16,7 @@ import 'address.dart';
 import 'deleteAcc.dart';
 import 'feedBack.dart';
 import 'filter.dart';
+import 'hotel Details/details.dart';
 
 
 void main() {
@@ -35,7 +36,8 @@ class MyApp extends StatelessWidget {
 // to impliment nav
 
 
-  home:Address(),
+  home:Details()
+  //Address(),
  // Reviews()
      //MembershipPremuim()
   // MembershipPlan(),

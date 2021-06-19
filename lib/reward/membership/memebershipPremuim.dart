@@ -295,16 +295,6 @@ class _MembershipPremuimState extends State<MembershipPremuim> {
 
 
 
-
-
-
-
-
-
-
-
-
-
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: Align(
